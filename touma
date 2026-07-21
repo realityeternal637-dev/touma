@@ -14,4 +14,3 @@ def print_tree(node, level=0, indent=""):
         indent_child = indent + ("└── " if child == node.children[-1] else "├── ")
         print(indent_child + str(child.data))
         print_tree(child,level + 1,indent + ("    " if child == node.children[-1] else "│   "))
-
